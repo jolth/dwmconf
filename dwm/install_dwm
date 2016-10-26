@@ -1,0 +1,34 @@
+
+
+** Install Dependencies:
+
+apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools
+apt-get install xorg
+
+** Download
+$ su 
+# cd /opt
+# wget dl.suckless.org/dwm/dwm-6.1.tar.gz
+# tar xvzf dwm-6.1.tar.gz
+los ficheros en nuestro directorio ./wdm* deben perteneser a nuestro usuario normal.
+$ chown -R $(id -u):$(id -g) dwm-6.1
+$ cd dwm-6.1
+$ cp config.def.h config.h
+Realizar todos los cambios que se deseen en config.h.
+$ make clean install
+Si tenemos algun problema podemos ver que dependencias son necesarias al verificar cuando se instala el paquete:
+# apt-get install -s dwm
+
+Si no fucnioa instalar dwm desde las fuentes jajajaja:
+# apt-get install dwm
+y pasar los ficheros que tendo en el Drobox.
+
+
+
+
+
+
+
+Leer:
+http://linuxforcynics.com/how-to/minimal-debian-install
+https://cannibalcandy.wordpress.com/2012/04/26/installing-and-configuring-dwm-under-ubuntu/

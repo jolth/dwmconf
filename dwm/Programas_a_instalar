@@ -1,0 +1,36 @@
+
+pciutils
+wireless-tools
+
+---- Install AMD/ATI ---
+
+# lspci -nn|grep -i vga
+# apt-get install firmware-linux-nonfree libgl1-mesa-dri xserver-xorg-video-ati
+
+
+---- Usage Wireless ---
+
+# lspci -nn|grep -i wireless
+Support Atheros
+# lsmod|grep -i ath9k
+
+----- Config terminal ---
+
+# update-alternatives --config x-terminal-emulator
+Existen 6 opciones para la alternativa x-terminal-emulator (que provee /usr/bin/x-terminal-emulator).
+
+  Selección   Ruta                             Prioridad  Estado
+------------------------------------------------------------
+  0            /usr/bin/gnome-terminal.wrapper   40        modo automático
+  1            /usr/bin/gnome-terminal.wrapper   40        modo manual
+  2            /usr/bin/koi8rxterm               20        modo manual
+  3            /usr/bin/lxterm                   30        modo manual
+  4            /usr/bin/urxvt                    20        modo manual
+* 5            /usr/bin/uxterm                   20        modo manual
+  6            /usr/bin/xterm                    20        modo manual
+
+
+---- 
+
+
+

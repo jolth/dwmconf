@@ -1,0 +1,25 @@
+
+
+***** Terminal
+uxterm => apt-get install xterm
+stterm
+
+*****  Browser
+surf 
+
+***** IRC
+https://irssi.org/
+http://weechat.org/
+http://freecode.com/projects/nethirc/
+
+
+***** Copying and Pasting in Xterm 
+apt-get install parcellite
+
+***** Editores de Texto
+medit
+
+***** Administrador de Archivos
+thunar
+
+

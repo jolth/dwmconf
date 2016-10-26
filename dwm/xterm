@@ -1,0 +1,39 @@
+
+** Cargar nueva configuración:
+
+$ xrdb -merge .Xresources
+
+
+** Saber que parametros tenemos:
+
+$ xrdb -query -all|grep -i xterm
+xterm*VT100.geometry:   180x65
+xterm*dynamicColors:    false
+xterm*eightBitInput:    true
+xterm*faceName: Terminus:style=Regular:size=7
+xterm*font:     -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+xterm*jumpScroll:       true
+xterm*multiScroll:      true
+xterm*rightScrollBar:   false
+xterm*saveLines:        2000
+xterm*scrollBar:        false
+xterm*scrollKey:        true
+xterm*scrollTtyOutput:  false
+xterm*selectToClipboard:        true
+xterm*toolBar:  false
+xterm*utf8:     2
+
+
+$ xrdb -query -all|grep -i xft
+URxvt*boldFont: xft:droid sans
+mono:bold:pixelsize=20:antialias=true:hinting=true
+URxvt*font:     xft:droid sans mono:pixelsize=20:antialias=true:hinting=true
+Xft.antialias:  true
+Xft.autohint:   false
+Xft.dpi:        97
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+

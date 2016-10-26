@@ -1,0 +1,34 @@
+
+Creamos una variable:
+
+export TERM=xterm-256color
+
+Revisamos:
+
+$ env|grep -i term
+TERM=xterm-256color
+XTERM_SHELL=/bin/bash
+XTERM_LOCALE=es_CO.UTF-8
+XTERM_VERSION=XTerm(325)
+
+Entramos a tmux
+$ tmux -2
+
+
+NOTA:
+Podemos dejar la configuración por defecto asi:
+$ echo 'export TERM=xterm-256color' >> ~/.bashrc
+$ echo "alias tmux='tmux -2'" >> ~/.bashrc
+$ source ~/.bashrc
+
+Troubleshooting:
+Si termemos proplemas los colores o el background en vim, agregar la siguiente
+linea en .vimrc:
+set term=screen-256color
+
+He instentar esto:
+$ echo 'set -g default-terminal "xterm-256color"' >> ~/.tmux.conf
+
+LECTURAS:
+http://www.robmeerman.co.uk/unix/256colours
+http://sunaku.github.io/vim-256color-bce.html

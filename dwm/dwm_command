@@ -1,0 +1,18 @@
+Alt+Shift+Enter
+    Launch xterm
+Alt+Shift+C
+    Kill a client (a window, if you must insist)
+Alt+t
+    Switch to tile layout
+Alt+m
+    Switch to monocle layout
+Alt+f
+    Switch to floating layout
+Alt+b
+    Show/hide bar
+Alt+p
+    Launch dmenu
+Alt+[num]
+    Switch to tag [num]
+Alt+Shift+Q
+    Quit dwm

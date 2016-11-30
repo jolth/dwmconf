@@ -112,9 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#bind -r '\C-s'
-#stty -ixon
-
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
@@ -122,3 +119,13 @@ export TERM=xterm-256color
 alias tmux='tmux -2'
 bind -r '\C-s'
 stty -ixon
+
+alias rm='rm -i'
+
+# automatic transparency
+[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+
+# opacity
+#compton -cCGfF -b -i 0.75 --vsync opengl
+compton -cCGfF -b -i 0.52 --vsync opengl
+

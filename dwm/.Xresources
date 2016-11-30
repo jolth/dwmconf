@@ -67,3 +67,18 @@ xterm*selectToClipboard:  true
 !! URxvt
 URxvt*font: xft:droid sans mono:pixelsize=20:antialias=true:hinting=true
 URxvt*boldFont: xft:droid sans mono:bold:pixelsize=20:antialias=true:hinting=true
+!URxvt.transparent: true
+!URxvt.shading: 200
+! Included this so you know how to make your foreground not match the color of your background
+!URxvt.foreground: #eeeeee
+
+
+!!
+!xterm*Background: black
+!xterm*Foreground: green
+!xterm*transparent: true
+!xterm*font: 9x15
+!xterm*saveLines: 1000
+!xterm*HiForeColor: white
+!xterm*HiBackColor: #c06077
+!xterm*geometry: 79x25

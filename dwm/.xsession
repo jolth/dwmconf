@@ -20,4 +20,14 @@ done &
 #(watch -n 1 | xsetroot -name "$( date +"%F %I:%M %p" )") & 
 #(conky | while read LINE; do xsetroot -name "$LINE"; done) &
 
+# wallpaper
+feh --bg-scale ~/Descargas/slim-dwm01.png
+
+# automatic transparency
+# http://archive.debian.org/debian/pool/main/t/transset-df/
+#[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+
+# opacity 
+#compton -cCGfF -b -i 0.75 --vsync opengl
+
 exec dwm

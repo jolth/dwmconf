@@ -127,5 +127,6 @@ alias rm='rm -i'
 
 # opacity
 #compton -cCGfF -b -i 0.75 --vsync opengl
-compton -cCGfF -b -i 0.52 --vsync opengl
+#compton -cCGfF -b -i 0.52 --vsync opengl
+compton -cCGfF -b -i 1.90 --vsync opengl
 

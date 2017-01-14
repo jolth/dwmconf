@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
+    xterm-color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -76,21 +76,21 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -111,10 +111,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+#bind -r '\C-s'
+#stty -ixon
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+# git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+#BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 export TERM=xterm-256color
 alias tmux='tmux -2'
 bind -r '\C-s'
@@ -123,11 +128,9 @@ stty -ixon
 alias rm='rm -i'
 
 # automatic transparency
-# http://forchheimer.se/transset-df
 [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # opacity
 #compton -cCGfF -b -i 0.75 --vsync opengl
 #compton -cCGfF -b -i 0.52 --vsync opengl
 compton -cCGfF -b -i 1.90 --vsync opengl
-

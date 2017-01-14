@@ -21,7 +21,7 @@ done &
 #(conky | while read LINE; do xsetroot -name "$LINE"; done) &
 
 # wallpaper
-feh --bg-scale ~/Descargas/slim-dwm01.png
+feh --bg-scale ~/.wallpapers/slim-dwm01.png
 
 # automatic transparency
 # http://archive.debian.org/debian/pool/main/t/transset-df/

@@ -123,6 +123,7 @@ stty -ixon
 alias rm='rm -i'
 
 # automatic transparency
+# http://forchheimer.se/transset-df
 [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # opacity

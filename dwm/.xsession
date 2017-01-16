@@ -26,9 +26,9 @@ feh --bg-scale ~/.wallpapers/slim-dwm01.png
 
 # automatic transparency
 # http://archive.debian.org/debian/pool/main/t/transset-df/
-#[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # opacity 
-#compton -cCGfF -b -i 0.75 --vsync opengl
+compton -cCGfF -b -i 0.75 --vsync opengl
 
 exec dwm

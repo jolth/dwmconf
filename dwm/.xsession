@@ -8,15 +8,15 @@ xrdb -merge .Xresources
 #    xfce4-power-manager &
 #fi
 
-while true; do
+#while true; do
     # by jolth:
     #xsetroot -name "$(date +"%A %F | %R:%S")"
     #xprop -root -notype -f WM_NAME "8u" \
     #	        | sed -n -r 's/WM_NAME = \"(.*)\"/\1/p'
     # git clone git://git.suckless.org/dwmstatus
-    dwmstatus
-    sleep 1s
-done &
+    #dwmstatus
+    #sleep 1s
+#done &
 #(watch -n 1 | xsetroot -name "$( date +"%F %I:%M %p" )") & 
 #(conky | while read LINE; do xsetroot -name "$LINE"; done) &
 
@@ -31,4 +31,5 @@ feh --bg-scale ~/.wallpapers/slim-dwm01.png
 # opacity 
 compton -cCGfF -b -i 0.75 --vsync opengl
 
+conky | while read -r; do xsetroot -name "$REPLY"; done &
 exec dwm

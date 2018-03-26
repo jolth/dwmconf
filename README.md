@@ -26,3 +26,8 @@ installing:
 
 $ sudo make clean install
 
+
+## support Display Manager
+
+$ sudo cp dwmconf/dwm/dwm.desktop /usr/share/xsessions/
+

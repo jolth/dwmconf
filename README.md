@@ -30,4 +30,6 @@ $ sudo make clean install
 ## support Display Manager
 
 $ sudo cp dwmconf/dwm/dwm.desktop /usr/share/xsessions/
+$ sudo update-alternatives --install $(which x-window-manager) x-window-manager $(which dwm) 20
+$ chmod +x ~/.xsession
 

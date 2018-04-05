@@ -4,11 +4,10 @@ xrdb -merge .Xresources
 
 # wallpaper
 feh --bg-scale ~/.wallpapers/slim-dwm01.png
-#feh --bg-scale ~/.wallpapers/dwm.png
 
 # automatic transparency
 # http://archive.debian.org/debian/pool/main/t/transset-df/
-[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+#[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # dwm launch
 exec dwmstatus & dwm

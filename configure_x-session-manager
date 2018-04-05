@@ -1,0 +1,21 @@
+$ sudo update-alternatives --config x-session-manager
+There is only one alternative in link group x-session-manager (providing /usr/bin/x-session-manager): /usr/bin/gnome-session
+Nothing to configure.
+$ sudo update-alternatives --install $(which x-session-manager) x-session-manager $(which dwm) 20
+$ sudo update-alternatives --list x-session-manager
+/usr/bin/gnome-session
+/usr/local/bin/dwm
+$ sudo update-alternatives --config x-session-manager
+There are 2 choices for the alternative x-session-manager (providing /usr/bin/x-session-manager).
+
+  Selection    Path                    Priority   Status
+------------------------------------------------------------
+* 0            /usr/bin/gnome-session   50        auto mode
+  1            /usr/bin/gnome-session   50        manual mode
+  2            /usr/local/bin/dwm       20        manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 2
+update-alternatives: using /usr/local/bin/dwm to provide /usr/bin/x-session-manager (x-session-manager) in manual mode
+ 
+$ less /usr/bin/x-session-manager
+

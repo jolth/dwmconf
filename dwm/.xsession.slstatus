@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+xrdb -merge .Xresources
+
+# wallpaper
+feh --bg-scale ~/.wallpapers/slim-dwm01.png
+
+# automatic transparency
+# http://archive.debian.org/debian/pool/main/t/transset-df/
+#[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+
+# dwm launch
+exec slstatus & dwm

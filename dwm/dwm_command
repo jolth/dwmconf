@@ -16,3 +16,6 @@ Alt+[num]
     Switch to tag [num]
 Alt+Shift+Q
     Quit dwm
+
+
+The grow and shrink commands are Alt-l and Alt-h respectively for tiled mode.

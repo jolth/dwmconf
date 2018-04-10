@@ -22,11 +22,17 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#212121";*/
 /*static const char col_cyan[]        = "#005577";*/
-static const char col_gray1[]       = "#212121";
-static const char col_gray2[]       = "#1C1C1C";
-static const char col_gray3[]       = "#696969";
-static const char col_gray4[]       = "#C0C0C0";
-static const char col_cyan[]        = "#212121";
+
+static const char col_gray1[]       = "#212121"; /* backgroud color of bar*/
+/*static const char col_gray1[]       = "#212121";*/
+static const char col_gray2[]       = "#212121"; /* border box not selections*/
+/*static const char col_gray2[]       = "#1C1C1C";*/
+static const char col_gray3[]       = "#696969"; /* text bar */
+/*static const char col_gray3[]       = "#696969";*/
+static const char col_gray4[]       = "#adadad"; /* select text bar */
+/*static const char col_gray4[]       = "#C0C0C0";*/ 
+static const char col_cyan[]        = "#2c2c2d"; /* box, desk and title selections*/
+/*static const char col_cyan[]        = "#212121";*/
 
 
 /*static const char col1[] = "#212121";
@@ -45,16 +51,27 @@ static const char *colors[][3]      = {
 /* tagging */
 /*static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };*/
 /* tagging */
+/*static const char *tags[] = {
+  "\u2170 term",
+  "\u2171 web",
+  "\u2172 prod",
+  "\u2173 dev",
+  "\u2174 prog",
+  "\u2175 misc",
+  "\u2176 media",
+  "\u2177 game",
+  "\u2178 serv",
+};*/
 static const char *tags[] = {
-  "\u0001 term",
-  "\u0002 web",
-  "\u0003 prod",
-  "\u0004 dev",
-  "\u0005 prog"
-  "\u0006 misc",
-  "\u0007 media",
-  "\u0008 game",
-  "\u0009 serv",
+  "\u2170 ",
+  "\u2171 ",
+  "\u2172 ",
+  "\u2173 ",
+  "\u2174 ",
+  "\u2175 ",
+  "\u2176 ",
+  "\u2177 ",
+  "\u2178 ",
 };
 
 static const Rule rules[] = {
@@ -65,7 +82,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-    { "google-chrome-stable",  NULL,       NULL,       1 << 3,       0,           -1 },
+    { "google-chrome-stable",  NULL,       NULL,       1 << 2,       0,           -1 },
 };
 
 /* layout(s) */

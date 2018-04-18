@@ -51,11 +51,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ cpu_perc, "[CPU: %3s%%]", NULL    },
-	{ ram_perc, "[RAM: %2s%%]", NULL    },
-  { disk_free, "[DISK FREE: / %.3sGB]", "/dev/sdb6"  },
-  { vol_perc, "[VOL: %s%%]", "/dev/mixer" },
-  { uptime, "[UPTIME: %s]", NULL},
-  { username, "[USER: %s]", NULL},
-	{ datetime, "[ %s ]",       "%F %T" },
+	{ cpu_perc, "\u2006 CPU: %3s%% \u2006", NULL    },
+	{ ram_perc, "\u26A1 RAM: %2s%% \u2006", NULL    },
+  { disk_free, "\u26AA DISK FREE: / %.3sGB \u2006", "/dev/sdb6"  },
+  { vol_perc, "\u26AA VOL: %s%% \u2006", "/dev/mixer" },
+  { uptime, "\u2661 UPTIME: %s\u2006", NULL},
+  { username, "\u263A USER: %s\u2006", NULL},
+	{ datetime, "\u23F2 %s", "%F %T" },
 };

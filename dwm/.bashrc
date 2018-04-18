@@ -128,9 +128,20 @@ stty -ixon
 alias rm='rm -i'
 
 # automatic transparency
-[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+#[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 # opacity
-#compton -cCGfF -b -i 0.75 --vsync opengl
-#compton -cCGfF -b -i 0.52 --vsync opengl
-compton -cCGfF -b -i 1.90 --vsync opengl
+#compton -cCGfF -b -i 1.90 --vsync opengl
+
+# if install powerline in local storage
+export PATH=/home/jolth/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/jolth/.local/bin
+
+# auto load powerline
+if [ -f `which powerline-daemon` ]; then
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+fi
+if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+fi

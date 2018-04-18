@@ -6,7 +6,15 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /*static char *font = "Liberation Mono:pixelsize=10:antialias=true:autohint=true";*/
-static char *font = "monospace:size=6";
+
+
+/*static char *font = "monospace:size=6";
+static int borderpx = 1;*/
+
+/* using Powerline:
+ * $ fc-list | grep -i 'power'
+ * font and powerline: http://powerline.readthedocs.io/en/master/installation/linux.html */
+static char font[] = "Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=8:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
@@ -17,7 +25,8 @@ static int borderpx = 1;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+/*static char *shell = "/bin/sh";*/
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 

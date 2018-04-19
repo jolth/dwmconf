@@ -53,7 +53,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ cpu_perc, "\u2006 CPU: %3s%% \u2006", NULL    },
 	{ ram_perc, "\u26A1 RAM: %2s%% \u2006", NULL    },
-  { disk_free, "\u26AA DISK FREE: / %.3sGB \u2006", "/dev/sdb6"  },
+  { disk_free, "\u25FD DISK FREE: / %.3sGB \u2006", "/dev/sdb6"  },
   { vol_perc, "\u26AA VOL: %s%% \u2006", "/dev/mixer" },
   { uptime, "\u2661 UPTIME: %s\u2006", NULL},
   { username, "\u263A USER: %s\u2006", NULL},

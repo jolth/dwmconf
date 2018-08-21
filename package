@@ -2,7 +2,12 @@ thunar: file manager
 medit, leafpad: text editor
 viewnior: simple, fast and elegant image viewer
 Shutter: screenshot
+
+
+## Terminal
 terminus: https://github.com/Eugeny/terminus
+Hyper Terminal: https://hyper.is
+Alacritty: https://github.com/jwilm/alacritty
 
 acpi: Shows battery status and other ACPI information 
 

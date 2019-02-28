@@ -1,0 +1,11 @@
+
+#1 REPO:
+https://github.com/ryanoasis/nerd-fonts/
+Fonts ExtraLight:
+  SauceCodePro Nerd Font Mono:style=ExtraLight,Regular
+  "SauceCodePro Nerd Font Mono:style=ExtraLight,Regular:pixelsize=10:antialias=true:autohint=true"
+Other Fonts:
+  "Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=8:antialias=true:autohint=true"
+
+#2 REPO:
+https://adobe-fonts.github.io/source-code-pro/

@@ -1,3 +1,6 @@
 
 st is a simple terminal
 https://st.suckless.org/
+
+
+No olvidar las fuentes: "SauceCodePro Nerd Font Mono:style=ExtraLight,Regular", revisar el fichero font en ../font o encontrarlas en https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/SourceCodePro.zip 

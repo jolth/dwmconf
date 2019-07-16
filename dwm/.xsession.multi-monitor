@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+xrdb -merge .Xresources
+xrandr --auto --output DP-1 --mode 1366x768 --left-of HDMI-2
+
+# wallpaper
+#feh --bg-scale ~/.wallpapers/slim-dwm01.png
+#feh --bg-scale ~/.wallpapers/debian_minimal_by_trailpups.png
+#feh --bg-scale ~/.wallpapers/debian-background-40686-41637-hd-wallpapers.jpg
+#feh --bg-scale ~/.wallpapers/d4c17d48d9e0a5ac9986887163f435ec.jpg
+#feh --bg-scale ~/.wallpapers/69628726-hackers-wallpapers.png
+feh --bg-scale ~/.wallpapers/hubblessharpestviewoftheorionnebula.jpg
+
+# automatic transparency
+# http://archive.debian.org/debian/pool/main/t/transset-df/
+#[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+
+# dwm launch
+#exec dwmstatus & dwm
+exec slstatus & dwm
